@@ -8,33 +8,49 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <h1>Personal Assistant</h1>
-
-    <section id="completeTask">
-        <from action = addTask>
-            <label for= "addTask"></label>
-            <input type="test" id=addTask></input>
-            <button type="submit">Add Task</button>
-        </from>
-    </section>
-
-    <p>Tasks Remaining : 2</p>
-    
-    <section id=remainingTasks>
-        <table>
-        <tr>
-            <th>Task 1</th>
-            <th><button type="submit">Check</button></th>
-            <th><button type="submit">Remove</button></th>
-        </tr>
-        <tr>
-            <th>Task 2</th>
-            <th><button type="submit">Check</button></th>
-            <th><button type="submit">Remove</button></th>
-        </tr>
-        </table>
+    <div id=navigationBar>        
+        <a href="index.html">Dashboard</a>
+                
+        <a href="addTask.html">Add Task</a>
+                
+        <a href="listTask.html">Tasks</a>
+                
+        <a href="completedTasks.html">Completed Tasks</a>
         
-    </section>
+        <a href="todaysTasks.html">Todays Tasks</a>
+        
+        <from action = search>
+            <label for= "search"></label>
+            <input type="test" id=search>search</input>                    
+    </div>  
 
-</body>
-</html>
+        <h1>Personal Assistant</h1>
+
+        <section id="completeTask">
+            <from action = addTask>
+                <label for= "addTask"></label>
+                <input type="test" id=addTask></input>
+                <button type="submit">Add Task</button>
+            </from>
+        </section>
+
+        <p>Tasks Remaining : 2</p>
+        
+        <section id=remainingTasks>
+            <table>
+            <tr>
+                <th>Task 1</th>
+                <th><button type="submit">Check</button></th>
+                <th><button type="submit">Remove</button></th>
+            </tr>
+            <tr>
+                <th>Task 2</th>
+                <th><button type="submit">Check</button></th>
+                <th><button type="submit">Remove</button></th>
+            </tr>
+            </table>
+            
+        </section>
+
+    </body>
+    </html>
