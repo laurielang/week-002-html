@@ -1,75 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 <body>
-        <div class="wrapper">
-                <main>
-                  
-                  <div class="calendar">
-                    <div class="calendar__header">
-                      <div>mon</div>
-                      <div>tue</div>
-                      <div>wed</div>
-                      <div>thu</div>
-                      <div>fri</div>
-                      <div>sat</div>
-                      <div>sun</div>
-                    </div>
-                    <div class="calendar__week">
-                      <div class="calendar__day day">1</div>
-                      <div class="calendar__day day">2</div>
-                      <div class="calendar__day day">3</div>
-                      <div class="calendar__day day">4</div>
-                      <div class="calendar__day day">5</div>
-                      <div class="calendar__day day">6</div>
-                      <div class="calendar__day day">7</div>
-                    </div>
-                    <div class="calendar__week">
-                      <div class="calendar__day day">8</div>
-                      <div class="calendar__day day">9</div>
-                      <div class="calendar__day day">10</div>
-                      <div class="calendar__day day">11</div>
-                      <div class="calendar__day day">12</div>
-                      <div class="calendar__day day">13</div>
-                      <div class="calendar__day day">14</div>        
-                    </div>
-                    <div class="calendar__week">
-                      <div class="calendar__day day">15</div>
-                      <div class="calendar__day day">16</div>
-                      <div class="calendar__day day">17</div>
-                      <div class="calendar__day day">18</div>
-                      <div class="calendar__day day">19</div>
-                      <div class="calendar__day day">20</div>
-                      <div class="calendar__day day">21</div>    
-                    </div>
-                    <div class="calendar__week">
-                      <div class="calendar__day day">22</div>
-                      <div class="calendar__day day">23</div>
-                      <div class="calendar__day day">24</div>
-                      <div class="calendar__day day">25</div>
-                      <div class="calendar__day day">26</div> 
-                      <div class="calendar__day day">27</div> 
-                      <div class="calendar__day day">28</div> 
-                    </div>
-                    <div class="calendar__week">
-                      <div class="calendar__day day">29</div>
-                      <div class="calendar__day day">30</div>
-                      <div class="calendar__day day">31</div>
-                      <div class="calendar__day day">1</div>
-                      <div class="calendar__day day">2</div>
-                      <div class="calendar__day day">3</div>
-                      <div class="calendar__day day">4</div>
-                    </div>
-                  </div>
-                </main>
-               
-              </div>
+  <div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+    </div>
+</div>
 </body>
 </html>
